@@ -37,13 +37,13 @@ hr{
 
 #about img {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
     align-items: center;
 }
 
 #about h1{
     width: 40%;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
     padding: 1rem;
 }
@@ -82,6 +82,32 @@ hr{
     text-align: center;
     padding: 1rem;
 }
+
+.typewriter {
+    border-right: solid 3px rgb(49, 85, 247);
+    white-space: nowrap;
+    overflow: hidden; 
+  }
+  
+  /* Animation */
+  .typewriter {
+    animation: animated-text 4s steps(29,end) 1s 1 normal both,
+               animated-cursor 600ms steps(29,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgb(49, 85, 247);}
+    to{border-right-color: transparent;}
+  }
 
 #skills {
     margin-top: 3%; 
@@ -186,6 +212,30 @@ hr{
     padding: 3%;
 }
 
+@media only screen and (max-width:1000px){
+    .form {
+        min-width: 50% !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .form {
+        min-width: 70% !important;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .form {
+        min-width: 70% !important;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .form {
+        min-width: 70% !important;
+    }
+}
+
 .form-controller input {
     width: 100%;
     outline: 0;
@@ -198,11 +248,23 @@ hr{
     border-radius: 4px;
 }
 
+.form-controller.success input {
+    border-color: var(--success-color);
+}
+
+.form-controller.error input {
+    border-color: var(--error-color);
+}
+
 .form-controller small{
     display: block;
     margin-bottom: 15px;
     color: var(--error-color);
     visibility: hidden;
+}
+
+.form-controller.error small{
+    visibility: visible;
 }
 
 .form-controller label{
