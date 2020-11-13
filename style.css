@@ -33,26 +33,28 @@ hr{
 
 #about {
     margin-bottom: 5%;
+    animation: about-animation 600ms ease-in;
+}
+
+@keyframes about-animation {
+    0% {
+        transform: scale(0);
+    }   
+
+    90%{
+        transform: scale(1.01);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 #about img {
     width: 100%;
     margin: 0 auto;
     align-items: center;
-    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
-
-@keyframes animated-text{
-    from{width: 0;}
-    to{width: 472px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: rgb(49, 85, 247);}
-    to{border-right-color: transparent;}
-  }
 
 #about h1{
     width: 40%;
@@ -109,7 +111,17 @@ hr{
   }
   
   /* text animation */
-
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 472px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-right-color: rgb(49, 85, 247);}
+    to{border-right-color: transparent;}
+  }
 
 #skills {
     margin-top: 3%; 
