@@ -21,6 +21,10 @@ hr{
     border-bottom: none;
 }
 
+.color {
+    color:rgb(49, 85, 247);
+}
+
 .my-navbar a, .my-navbar li{
     color: white;
     padding-left: 2rem;
