@@ -35,6 +35,10 @@ hr{
     color: white;
 }
 
+.navbar-nav {
+    color: white;
+}
+
 #about {
     margin-bottom: 5%;
     animation: about-animation 600ms ease-in;
@@ -325,7 +329,7 @@ button:focus{
 
 .footer a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .footer{
@@ -333,4 +337,5 @@ button:focus{
     margin-top: 3%;
     background-color: rgb(49, 85, 247);
     padding-bottom: 50px;
+    color: white;
 }
