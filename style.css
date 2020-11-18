@@ -39,7 +39,7 @@ hr{
     color: white;
 }
 
-#about {
+#about img{
     margin-bottom: 5%;
     animation: about-animation 600ms ease-in;
 }
