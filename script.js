@@ -28,10 +28,8 @@ checkRequired = (inputArr) => {
   inputArr.forEach(function (input) {
     if (input.value.trim() === '') {
       showError(input, `${getFieldName(input)} is a required field`);
-      console.log(`did not submit`);
     } else {
       showSuccess(input);
-      console.log(`submitted`);
     }
   });
 };
